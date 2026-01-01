@@ -129,7 +129,7 @@ async function analyzeVibeWithGemini(file, apiKey) {
   const base64Image = await toBase64(file);
 
   const res = await fetch(
-    "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" +
+    "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" +
       apiKey,
     {
       method: "POST",
